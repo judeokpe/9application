@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #eee;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            height: 20vh;
+            background-color: white;
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+            padding: 1rem;
+            /* background-image: url("https://nanocodes.s3.amazonaws.com/andromediamedia/Background.png"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+            border-bottom: 1px solid #B9B9B9;
+        }
+
+        main {
+            width: 70%;
+            margin: 5rem auto;
+        }
+
+        .middle {
+            text-align: center;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .text_logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .text_logo ul {
+            text-align: center;
+        }
+
+        .main_text {
+            background-color: white;
+            padding: 1.5rem;
+        }
+
+        .text_logo+li {
+            font-size: 1.5rem;
+            color: #F16F3B;
+            font-weight: 700;
+        }
+
+        .text_logo+li+li {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #F16F3B;
+        }
+
+        .text_logo li+li {
+            color: #F16F3B;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .text_logo ul li {
+            color: #000000;
+        }
+
+        .text_logo li img ,.footer_logo img{
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+
+        input[type="submit"] {
+            padding: 0.7rem 1.5rem;
+            border-radius: 2.34rem;
+            background-color: #F16F3B;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            border: none;
+        }
+
+        form {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        footer {
+            background-color: #F16F3B;
+            border-radius: 0 0 30px 30px;
+            /* height: 30vh; */
+            color: white;
+
+            padding-bottom: 1rem;
+        }
+
+        .footer_logo {
+            display: flex;
+            color: white;
+            justify-content: center;
+            margin: 1rem 0;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .footer_logo ul {
+            text-align: center;
+        }
+
+        .icons_container {
+            display: flex;
+            margin: 2rem 0;
+            gap: 3rem;
+            justify-content: center;
+        }
+
+        .icons_container svg {
+            height: 1.3rem;
+            width: 1.3rem
+        }
+
+        .footer_text {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .footer_text ul {
+            margin: 1rem;
+        }
+
+        .main_list {
+            line-height: 1.5;
+        }
+        .footer_logo li+li{
+            font-size:1.5rem;
+            font-weight: 700;
+        }
+
+        @media (max-width:768px) {
+            main {
+
+                width: 80%;
+            }
+
+            .text_logo+li {
+                font-size: 1.5rem;
+                color: #000000;
+                font-weight: 700;
+            }
+
+            .text_logo+li+li {
+                font-size: 1.2rem;
+                font-weight: 700;
+                
+            }
+        }
+
+        @media (max-width:400px) {
+            header {
+                background-position: right bottom;
+                background-size: 50%;
+            }
+
+            main {
+                width: 85%;
+            }
+
+            input[type="submit"] {
+                padding: 0.8rem 1rem;
+                border-radius: 2rem;
+                font-size: 0.8rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+
+        }
+
+        @media (max-width:350px) {
+            header {
+                background-position: right top;
+                background-size: 40%;
+            }
+
+            main {
+                width: 85%;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+
+            .text_logo+li {
+                font-size: 1.3rem;
+                color: #000000;
+                font-weight: 700;
+            }
+
+            .text_logo+li+li {
+                font-size: 1rem;
+                font-weight: 700;
+                
+            }
+
+            .icons_container img {
+                height: 1rem;
+                width: 1rem;
+            }
+
+            .icons_container {
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <ul class="text_logo middle">
+            <li><img src="https://imgur.com/a/iMXkHAF" alt="" referrerpolicy="no-referrer"></li>
+            <li>9app</li>
+        </ul>
+        <header>
+            <nav>
+                <ul class="main_list">
+
+                    <ul class="text_logo">
+                        <li><img src="https://i.imgur.com/flDx2XF.png" alt=""></li>
+                        <li>9app</li>
+                    </ul>
+                    <li>Verify your 9app account !</li>
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="main_text">
+            Dear {{ user.email }}, <br> <br>
+            <p>Use the following OTP code to verify your account:</p>
+            <p><i>It expires in {{expiration_time}} min(s)</i></p>
+            <p class="otp-code">{{ otp_code }}</p>
+            <p>Best regards,<br>The 9app Team</p>
+            
+        </div>
+
+       
+
+ 
+        <footer>
+            <div>
+                <img src="" alt="" />
+                <ul class=" footer_logo">
+                    <li><img src="https://i.imgur.com/flDx2XF.png" alt=""></li>
+                    <li>9app</li>
+                </ul>
+            </div>
+            <!-- <div class="icons_container">
+                <img src="{% static 'img/facebook.png' %}" alt="Facebook">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+                <img src="{% static 'img/linkedin.png' %}" alt="Linkedin">
+                <img src="{% static 'img/twitter.png' %}" alt="X">
+            </div> -->
+
+            <ul class="footer_text">
+                <ul>
+                    <li>Copyright © 9app</li>
+                    <li>All logos and trademarks are the properties of their respective owners</li>
+                </ul>
+                    <li>manage preferences | unsubscribe | privacy policy</li>
+            </ul>
+
+        </footer>
+    </main>
+</body>
+
+</html>
